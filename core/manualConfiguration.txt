@@ -1,0 +1,40 @@
+# Simple configuration file.
+# List of available channels to use as profile channels:
+#CHANNEL_DELTA       0
+#CHANNEL_THETA       1
+#CHANNEL_ALPHA       2
+#CHANNEL_ALPHA1     3
+#CHANNEL_ALPHA2     4
+#CHANNEL_BETA         5
+#CHANNEL_BETA1       6
+#CHANNEL_BETA2       7
+#CHANNEL_GAMMA     8
+#CHANNEL_GAMMA1   9
+#CHANNEL_GAMMA2  10
+#CHANNEL_AVG         11
+#CHANNEL_ATT          12
+#CHANNEL_MED         13
+#CHANNEL_POWER_AVG  14
+#
+# Channel 1 is X-axis and 2 is Y-axis.
+# As default prof 1 is 5 which is beta and is related to activity level during listening.
+# As default prof 2 is 1 which is theta and is related to good emotions during listening.
+# Others might be also used ie. gamma or alfa1 for activity ..
+#
+PROFILE_CHANNEL_1=5
+PROFILE_CHANNEL_2=1
+#
+# This is the size of the list that knows which songs had been played recently. Increase If same songs play too often :) It's factor of the actual list size.
+DJModeLastPlayedItemsListSize=0.25
+#
+# This is the SIZE of the tip of the iceberg where the corresponding songs are in the tip of the iceberg. This is used when selecting one position of different candidates of song positions and also just for picking the best solutions from songs' list.
+DJModeTopRankingRate=0.3
+#
+# This tells how channels are divided into more smooth blocks of avarage data. For example 5 tells that each song's data is splitted into 5 second pieces. This also tells the accuracy of DJMode when it's finding the peak positions. Ie 5 seconds resolution. No decimals.
+SMOOTH_GRAPH_DIVISION_IN_SECS=5
+#
+# Amount of peaks in channel. This is just outlook question. These are only visible for eye but won't offer much purpose. No decimals.
+AMOUNT_OF_PEAKS_IN_CHANNEL=5
+#
+# Time interval of autosaving config. Time in seconds. No decimals.
+autoSaveConfigurationTime=30

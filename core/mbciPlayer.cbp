@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MusicBCIPlayer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="mbciPlayer" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="$(#boost.include)" />
+			<Add directory="C:/Coding/audiere-1.9.4-win32/include" />
+			<Add directory="C:/Coding/DevPaks/include" />
+		</Compiler>
+		<Linker>
+			<Add option="C:\Coding\audiere-1.9.4-win32\lib\audiere.lib" />
+			<Add option="thinkgear.lib" />
+			<Add option="icon.res" />
+			<Add option="-static" />
+			<Add option="-lm -lfftw3-3 -lstdc++" />
+			<Add library="allegro-5.0.4-monolith-mt" />
+			<Add library="shlwapi" />
+			<Add library="libboost_filesystem-mgw46-mt-d-1_53" />
+			<Add library="libboost_system-mgw46-mt-d-1_53" />
+			<Add library="libboost_serialization-mgw46-mt-d-1_53" />
+			<Add directory="$(#boost.lib)" />
+			<Add directory="C:/Coding/audiere-1.9.4-win32/lib" />
+			<Add directory="C:/Coding/audiere-1.9.4-win32/bin" />
+			<Add directory="C:/Coding/CodeBlocks/share/CodeBlocks/devpaks/bin" />
+			<Add directory="C:/Coding/DevPaks/bin" />
+			<Add directory="C:/Coding/DevPaks/lib" />
+		</Linker>
+		<Unit filename="include/AngleRoutines.h" />
+		<Unit filename="include/BWGraph.h" />
+		<Unit filename="include/BWManager.h" />
+		<Unit filename="include/BWMeter.h" />
+		<Unit filename="include/BgEffect.h" />
+		<Unit filename="include/BoostCopyDir.h" />
+		<Unit filename="include/BoostRelativePath.h" />
+		<Unit filename="include/ChannelInfo.h" />
+		<Unit filename="include/Config.h" />
+		<Unit filename="include/GUI/GUIButton.h" />
+		<Unit filename="include/GUI/GUICheckBox.h" />
+		<Unit filename="include/GUI/GUIElement.h" />
+		<Unit filename="include/GUI/GUIElementList.h" />
+		<Unit filename="include/GUI/GUIMouse.h" />
+		<Unit filename="include/GUI/GUIRadioButton.h" />
+		<Unit filename="include/GUI/GUIRollButton.h" />
+		<Unit filename="include/GUI/GUIScrollPanel.h" />
+		<Unit filename="include/GUI/GUIScroller.h" />
+		<Unit filename="include/GUI/GUISpectrumPanel.h" />
+		<Unit filename="include/GUI/GUIXYPicker.h" />
+		<Unit filename="include/ImageLibrary.h" />
+		<Unit filename="include/MindWaveDevice.h" />
+		<Unit filename="include/MusicLibrary.h" />
+		<Unit filename="include/OpenEEGDevice.h" />
+		<Unit filename="include/Particle.h" />
+		<Unit filename="include/PlayerCommon.h" />
+		<Unit filename="include/PlrFunctionality.h" />
+		<Unit filename="include/PlrGUI.h" />
+		<Unit filename="include/Serialport.h" />
+		<Unit filename="include/Song.h" />
+		<Unit filename="include/SongBwInfo.h" />
+		<Unit filename="include/Vec2.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/AngleRoutines.cpp" />
+		<Unit filename="src/BWGraph.cpp" />
+		<Unit filename="src/BWManager.cpp" />
+		<Unit filename="src/BWMeter.cpp" />
+		<Unit filename="src/BgEffect.cpp" />
+		<Unit filename="src/BoostCopyDir.cpp" />
+		<Unit filename="src/BoostRelativePath.cpp" />
+		<Unit filename="src/ChannelInfo.cpp" />
+		<Unit filename="src/Config.cpp" />
+		<Unit filename="src/GUI/GUIButton.cpp" />
+		<Unit filename="src/GUI/GUICheckBox.cpp" />
+		<Unit filename="src/GUI/GUIElement.cpp" />
+		<Unit filename="src/GUI/GUIElementList.cpp" />
+		<Unit filename="src/GUI/GUIMouse.cpp" />
+		<Unit filename="src/GUI/GUIRadioButton.cpp" />
+		<Unit filename="src/GUI/GUIRollButton.cpp" />
+		<Unit filename="src/GUI/GUIScrollPanel.cpp" />
+		<Unit filename="src/GUI/GUIScroller.cpp" />
+		<Unit filename="src/GUI/GUISpectrumPanel.cpp" />
+		<Unit filename="src/GUI/GUIXYPicker.cpp" />
+		<Unit filename="src/ImageLibrary.cpp" />
+		<Unit filename="src/MindWaveDevice.cpp" />
+		<Unit filename="src/MusicLibrary.cpp" />
+		<Unit filename="src/OpenEEGDevice.cpp" />
+		<Unit filename="src/Particle.cpp" />
+		<Unit filename="src/PlayerCommon.cpp" />
+		<Unit filename="src/PlrFunctionality.cpp" />
+		<Unit filename="src/PlrGUI.cpp" />
+		<Unit filename="src/Serialport.cpp" />
+		<Unit filename="src/Song.cpp" />
+		<Unit filename="src/SongBwInfo.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
