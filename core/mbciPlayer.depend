@@ -3992,7 +3992,7 @@
 	"../../include/PlayerCommon.h"
 	"../../include/GUI/GUIMouse.h"
 
-1404005359 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\main.cpp
+1404007638 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\main.cpp
 	<fstream>
 	<sstream>
 	<stdio.h>
@@ -7676,7 +7676,7 @@
 	"../include/ImageLibrary.h"
 	"../include/PlayerCommon.h"
 
-1403657854 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\src\mindwavedevice.cpp
+1404007631 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\src\mindwavedevice.cpp
 	"../include/MindWaveDevice.h"
 
 1403964004 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\src\musiclibrary.cpp
@@ -7691,7 +7691,7 @@
 1392135407 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\src\musiclibraryexpcollection.cpp
 	"../include/MusicLibraryExpCollection.h"
 
-1403650832 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\src\openeegdevice.cpp
+1404007713 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\src\openeegdevice.cpp
 	"../include/OpenEEGDevice.h"
 	"../include/Serialport.h"
 
@@ -7721,12 +7721,11 @@
 	"../include/Config.h"
 	<audiere.h>
 
-1403964272 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\src\plrfunctionality.cpp
+1404005464 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\src\plrfunctionality.cpp
 	"../include/PlrFunctionality.h"
 	"../include/PlrGUI.h"
 	"../include/PlayerCommon.h"
 	"../include/BoostCopyDir.h"
-	"../include/studyQData.h"
 
 1392507824 c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\include\studyqdata.h
 	"playerCommon.h"
@@ -7734,7 +7733,7 @@
 
 1392507802 c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\include\resultpair.h
 
-1403901591 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\src\plrgui.cpp
+1404005179 source:c:\users\tonis_000\desktop\codeprojects\mbciplayer\core\src\plrgui.cpp
 	"../include/PlrFunctionality.h"
 	"../include/PlrGUI.h"
 	"../include/PlayerCommon.h"

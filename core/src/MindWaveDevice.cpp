@@ -6,7 +6,6 @@ using namespace plrCommon;
 MindWaveDevice::MindWaveDevice()
 {
     //ctor
-    init();
 }
 
 MindWaveDevice::~MindWaveDevice()

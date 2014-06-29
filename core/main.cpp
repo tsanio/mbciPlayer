@@ -183,6 +183,10 @@ int main(int argc, char **argv)
     // Final thing! Let's open the medialibrary already! :)
     loadMusicLibrary();
 
+    // Finally load devices.
+    openEEGDevice.init();
+    mindWaveDevice.init();
+
     /* * * * * * * * * *
     * Program Main Loop *
     * * * * * * * * * */

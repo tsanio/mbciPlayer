@@ -7,7 +7,6 @@ OpenEEGDevice::OpenEEGDevice()
 {
     //ctor
     thread = NULL;
-    init();
 }
 
 OpenEEGDevice::~OpenEEGDevice()
@@ -15,10 +14,10 @@ OpenEEGDevice::~OpenEEGDevice()
     //dtor
 }
 
-static void *Serial_Thread_Func(ALLEGRO_THREAD *thr, void *arg);
+static void *Serial_Thread_OpenEEG_Func(ALLEGRO_THREAD *thr, void *arg);
 
 //! Function to read from serial in another thread so it doesn't affect other functionality.
-static void *Serial_Thread_Func(ALLEGRO_THREAD *thr, void *arg){
+static void *Serial_Thread_OpenEEG_Func(ALLEGRO_THREAD *thr, void *arg){
 
     // Handle is given from the method that called this function.
     HANDLE *h  = (HANDLE*) arg;
@@ -279,12 +278,15 @@ void OpenEEGDevice::init()
 
     // Open COMPort and thread.
     int openEEGPort = int(OpenEEGPortRollButton.getConvertedValue());
+    // Baudrate should be added to configurations also. B9600 B57600
     HANDLE h = openSerialPort(("COM"+intToStr(openEEGPort)).c_str(),B57600,one,off); // Comports with a bigger number (I believe bigger than 9) can be used by with their UNC Paths \\\\.\\COM11 (thanks to jaui)
+
     // If serial port stuff failed in intialization, make output in log but don't crash app.
     if (h == INVALID_HANDLE_VALUE) {
         playerLog("OpenEEG wasn't found on port " + intToStr(openEEGPort));
     } else {
-        thread   = al_create_thread(Serial_Thread_Func, h);
+        playerLog("Open EEG is using port " + intToStr(openEEGPort));
+        thread   = al_create_thread(Serial_Thread_OpenEEG_Func, h);
         al_start_thread(thread);
     }
 
